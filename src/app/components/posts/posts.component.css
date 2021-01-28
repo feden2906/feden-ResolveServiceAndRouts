@@ -5,3 +5,6 @@
   padding: 20px;
   background-color: #bbdbff;
 }
+.w50 {
+  min-width: 50%;
+}

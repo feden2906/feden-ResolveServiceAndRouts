@@ -20,6 +20,7 @@ export class FullUserComponent implements OnInit {
 
   ngOnInit(): void {
     // if (!this.chosenUser) {
+    //   console.log(this.chosenUser);
     //   this.activatedRouter.params.subscribe(({id}) => {
     //     this.userService.getUserById(id).subscribe(value => console.log(value));
     //   });

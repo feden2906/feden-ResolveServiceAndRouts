@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Post} from '../../models/post';
 
 @Component({
   selector: 'app-full-post',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullPostComponent implements OnInit {
 
-  constructor() { }
+  chosenPost: Post;
+
+  constructor(private router: Router, private activatedRouter: ActivatedRoute) {
+    this.activatedRouter.params.subscribe(value => {
+      this.chosenPost = this.router.getCurrentNavigation().extras.state as Post;
+    });
+  }
 
   ngOnInit(): void {
   }
