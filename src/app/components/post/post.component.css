@@ -1,0 +1,7 @@
+.postWrapper {
+  display: flex;
+  margin: 5px 0;
+}
+.postWrapper>h4 {
+  margin-right: 10px;
+}

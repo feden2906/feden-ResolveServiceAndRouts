@@ -10,6 +10,8 @@ import { UsersComponent } from './components/users/users.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { UserComponent } from './components/user/user.component';
 import { FullUserComponent } from './components/full-user/full-user.component';
+import { PostComponent } from './components/post/post.component';
+import { FullPostComponent } from './components/full-post/full-post.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FullUserComponent } from './components/full-user/full-user.component';
     UsersComponent,
     PostsComponent,
     UserComponent,
-    FullUserComponent
+    FullUserComponent,
+    PostComponent,
+    FullPostComponent
   ],
   imports: [
     BrowserModule,
