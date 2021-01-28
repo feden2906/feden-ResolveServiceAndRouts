@@ -1,0 +1,20 @@
+<p *ngIf="!chosenUser">Loading...</p>
+<div *ngIf="chosenUser">
+  <h2>{{chosenUser.name}}</h2>
+  <p><b>username:</b> {{chosenUser.username}}</p>
+  <p><b>email:</b> {{chosenUser.email}}</p>
+  <p><b>address:</b></p>
+  <p class="ml20"><b>street:</b> {{chosenUser.address.street}}</p>
+  <p class="ml20"><b>suite:</b> {{chosenUser.address.suite}}</p>
+  <p class="ml20"><b>city:</b> {{chosenUser.address.city}}</p>
+  <p class="ml20"><b>zipcode:</b> {{chosenUser.address.zipcode}}</p>
+  <p class="ml20"><b>location:</b></p>
+  <p class="ml40"><b>lat:</b> {{chosenUser.address.geo.lat}}</p>
+  <p class="ml40"><b>lng:</b> {{chosenUser.address.geo.lng}}</p>
+  <p><b>phone:</b> {{chosenUser.phone}}</p>
+  <p><b>website:</b> {{chosenUser.website}}</p>
+  <p><b>company:</b></p>
+  <p class="ml20"><b>name:</b> {{chosenUser.company.name}}</p>
+  <p class="ml20"><b>catchPhrase:</b> {{chosenUser.company.catchPhrase}}</p>
+  <p class="ml20"><b>bs:</b> {{chosenUser.company.bs}}</p>
+</div>

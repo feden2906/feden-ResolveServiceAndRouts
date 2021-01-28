@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 9vh;
+  background-color: dodgerblue;
+}
+.headerBtn {
+  width: 60px;
+  height: 30px;
+  margin: 0 20px;
+}

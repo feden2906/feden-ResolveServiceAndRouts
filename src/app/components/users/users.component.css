@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 91vh;
+  padding: 20px;
+  background-color: #bbdbff;
+}
+.w50 {
+  width: 50%;
+}

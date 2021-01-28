@@ -1,0 +1,7 @@
+.userWrapper {
+  display: flex;
+  margin: 5px 0;
+}
+.userWrapper>h3 {
+  margin-right: 10px;
+}
