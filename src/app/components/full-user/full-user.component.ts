@@ -13,9 +13,19 @@ export class FullUserComponent implements OnInit {
   chosenUser: User;
 
   constructor(private router: Router, private activatedRouter: ActivatedRoute, private userService: UserService) {
-    this.activatedRouter.params.subscribe(value => {
-      this.chosenUser = this.router.getCurrentNavigation().extras.state as User;
+    this.activatedRouter.params.subscribe(({id}) => {
+      const myUser = this.router.getCurrentNavigation().extras.state as User;
+      if (myUser){
+        console.log('myUser',myUser);
+        this.chosenUser = myUser;
+      }else{
+        this.userService.getUserById(id).subscribe(value => {
+          console.log(value);
+          this.chosenUser = value;
+        });
+      }
     });
+
   }
 
   ngOnInit(): void {
