@@ -13,10 +13,9 @@ export class PostComponent implements OnInit {
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   openFullInfo(): void {
-    this.router.navigate([this.post.id], {relativeTo: this.activatedRoute, state: this.post});
+    this.router.navigate([this.post.id], {relativeTo: this.activatedRoute, state: this.post})
   }
 }

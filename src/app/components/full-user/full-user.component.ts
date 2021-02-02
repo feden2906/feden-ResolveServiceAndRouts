@@ -16,11 +16,9 @@ export class FullUserComponent implements OnInit {
     this.activatedRouter.params.subscribe(({id}) => {
       const myUser = this.router.getCurrentNavigation().extras.state as User;
       if (myUser){
-        console.log('myUser',myUser);
         this.chosenUser = myUser;
       }else{
         this.userService.getUserById(id).subscribe(value => {
-          console.log(value);
           this.chosenUser = value;
         });
       }
@@ -29,12 +27,6 @@ export class FullUserComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // if (!this.chosenUser) {
-    //   console.log(this.chosenUser);
-    //   this.activatedRouter.params.subscribe(({id}) => {
-    //     this.userService.getUserById(id).subscribe(value => console.log(value));
-    //   });
-    // }
   }
 
 }
